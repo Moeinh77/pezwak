@@ -4,8 +4,7 @@
 	$Password =  "test";
 	$DBname   =  "Realstate"; 
 	
-	
-	
+
 	
 	// Border Class $row = class property
 	function ShowPropertyS ($row) {
