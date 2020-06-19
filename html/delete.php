@@ -32,7 +32,7 @@
 </head>
 <body>
 <?php
-  Border::ShowHeader($_SESSION["UserName"] , $_SESSION["RSname"]);
+  Border::ShowHeader($_SESSION["UserName"]);
 
 ?>
 
@@ -78,7 +78,7 @@
 
                                      <?php
 
-                                           $q1 =  "SELECT * From Customer ;";
+                                           $q1 =  "SELECT * From customer ;";
                                            $result = $mysqli->query($q1);
                                            echo '<br><br>';
                                           echo '<form class="form" method="post" action="">
@@ -104,7 +104,7 @@
                                 <div class="tab-pane fade" id="product-pills">
                                   <?php
 
-                                        $q1 =  "SELECT * From Product ;";
+                                        $q1 =  "SELECT * From product ;";
                                         $result = $mysqli->query($q1);
                                         echo '<br><br>';
                                        echo '<form class="form" method="post" action="">
@@ -130,7 +130,7 @@
 
                                   <?php
 
-                                        $q1 =  "SELECT * From Purchase ;";
+                                        $q1 =  "SELECT * From purchase ;";
                                         $result = $mysqli->query($q1);
                                         echo '<br><br>';
                                        echo '<form class="form" method="post" action="">
@@ -226,7 +226,6 @@
 
 					$q = "DELETE FROM Purchase
           Where ProductSerialNmber='$ProductSerialNmber_' AND CustomerName='$CustomerName_' ";
-          echo $q;
 							$result=$mysqli->query( $q ) ;
 
 							 if ($result === TRUE) {

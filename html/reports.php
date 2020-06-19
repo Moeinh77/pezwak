@@ -32,7 +32,7 @@
 </head>
 <body>
 <?php
-  Border::ShowHeader($_SESSION["UserName"] , $_SESSION["RSname"]);
+  Border::ShowHeader($_SESSION["UserName"]);
 
 ?>
 
@@ -79,7 +79,7 @@
 
                                      <?php
                                             $today=date("Y-m-d",time());
-                                           $q1 =  "SELECT * From Purchase Where DueDate < '$today' ;";
+                                           $q1 =  "SELECT * From purchase Where DueDate < '$today' ;";
                                            $result = $mysqli->query($q1);
                                            echo '<br><br>';
                                            echo '<form class="form" method="post" action="">
@@ -107,7 +107,7 @@
                                 <div class="tab-pane fade" id="product-pills">
                                   <?php
 
-                                        $q1 =  "SELECT * From Product ;";
+                                        $q1 =  "SELECT * From product ;";
                                         $result = $mysqli->query($q1);
                                         echo '<br><br>';
                                        echo '<form class="form" method="post" action="">
@@ -133,7 +133,7 @@
 
                                   <?php
 
-                                        $q1 =  "SELECT * From Purchase ;";
+                                        $q1 =  "SELECT * From purchase ;";
                                         $result = $mysqli->query($q1);
                                         echo '<br><br>';
                                        echo '<form class="form" method="post" action="">
@@ -159,7 +159,7 @@
 
                                   <?php
 
-                                        $q1 =  "SELECT * From Bugs ;";
+                                        $q1 =  "SELECT * From bugs ;";
                                         $result = $mysqli->query($q1);
                                         echo '<br><br>';
                                        echo '<form class="form" method="post" action="">

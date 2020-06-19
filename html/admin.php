@@ -34,7 +34,7 @@ session_start();
 </head>
 <body>
 <?php
-  Border::ShowHeader($_SESSION["UserName"] , $_SESSION["RSname"]);
+  Border::ShowHeader($_SESSION["UserName"]);
 
 ?>
 

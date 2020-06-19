@@ -24,7 +24,7 @@
 
 
 
-             function ShowHeader($UserName ,$RSname ){
+             function ShowHeader($UserName){
 
 echo '
     <header>
@@ -50,7 +50,7 @@ echo '
 
                 <a class="navbar-brand" href="admin.php">
 
-                    <img src="/img/logo.png" style="width:60px ;height:60px" />
+                    <img src="img/logo.png" style="width:60px ;height:60px" />
                 </a>
 
             </div>
@@ -86,7 +86,7 @@ echo '
     ';
              }
 
-  
+
 
 	}
 

@@ -30,7 +30,7 @@
 </head>
 <body>
 <?php
-  Border::ShowHeader($_SESSION["UserName"] , $_SESSION["RSname"]);
+  Border::ShowHeader($_SESSION["UserName"]);
 
 ?>
 
@@ -330,7 +330,7 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
         if (isset($_POST['SubmitPurchase']))
         {
 
-            $ProductName_=$_POST['ProductName'];
+        $ProductName_=$_POST['ProductName'];
         $CustomerName_=$_POST['CustomerName'];
         $ProductSerialNmber_  = $_POST['ProductSerialNmber']+0;
         $PaymentType_=$_POST['PaymentType'];
@@ -363,10 +363,6 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
 
 
           ?>
-
-           <!-------------------------------------------- -->
-
-
 
 
            </div>

@@ -33,7 +33,7 @@
 </head>
 <body>
 <?php
-  Border::ShowHeader($_SESSION["UserName"] , $_SESSION["RSname"]);
+  Border::ShowHeader($_SESSION["UserName"]);
 
 ?>
 
@@ -257,7 +257,7 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
 					$SSN_   =$_POST['SSN'];
           $Phone_=(int)$_POST['Phone'];
 
-					$q =  "UPDATE User SET Password='$Password_',Phone='$Phone_'
+					$q =  "UPDATE user SET Password='$Password_',Phone='$Phone_'
            Where SSN='$SSN_' AND Username='$Username_';";
 
 
@@ -283,7 +283,7 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
 					$Phone_=(int)$_POST['Phone'];
 					$Address_   =$_POST['Address'];
 
-          $q =  "UPDATE Customer SET Address='$Address_',Phone='$Phone_'
+          $q =  "UPDATE customer SET Address='$Address_',Phone='$Phone_'
                             Where Name='$Customername_' ;";
 
 
@@ -308,7 +308,7 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
 					$SerialNumber_  =(int)$_POST['SerialNumber'];
 					$Name_=$_POST['Name'];
 
-					$q =  "UPDATE Product SET
+					$q =  "UPDATE product SET
 					Name='$Name_',BuildDate='$BuildDate_',SupportDate='$SupportDate_'
           Where SerialNumber='$SerialNumber_';";
 
@@ -336,7 +336,7 @@ $mysqli = new mysqli($Server, $UserName, $Password, $DBname);
 					$AgreedPrice_=(int)$_POST['AgreedPrice'];
 					$SaleDate_=$_POST['SaleDate'];
 
-					$q = "UPDATE Purchase Set ProductName='$ProductName_',
+					$q = "UPDATE purchase Set ProductName='$ProductName_',
           PaymentType='$PaymentType_',
           AgreedPrice='$AgreedPrice_',
           SaleDate='$SaleDate_'
